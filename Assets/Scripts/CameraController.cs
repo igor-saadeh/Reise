@@ -39,7 +39,7 @@ public class MoveCamera : MonoBehaviour
 
     public void MoveCameraToTarget()
     {
-        Vector3 newPosition = new Vector3(startPosition.x + 5.5f, startPosition.y, startPosition.z);
+        Vector3 newPosition = new Vector3(startPosition.x + 1200f, startPosition.y, startPosition.z);
 
         StartCoroutine(MoveToPosition(newPosition, moveTime));
     }
