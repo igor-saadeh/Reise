@@ -8,6 +8,12 @@ public class WateringCan : MonoBehaviour
 {
     private bool isDragging = false;
     private Vector3 offset;
+    private Vector3 startPosition;
+
+    private void Awake()
+    {
+        startPosition = transform.position; 
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -36,6 +42,7 @@ public class WateringCan : MonoBehaviour
     void OnMouseUp()
     {
         isDragging = false;
+        transform.position = startPosition;
     }
 
     void Update()

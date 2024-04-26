@@ -28,6 +28,7 @@ public class ProgressBar : MonoBehaviour
         gameObject.SetActive(false);
     }
 
+    // VN
     public void SetProgress(float progress)
     {
         GetComponent<UnityEngine.UI.Slider>().value = progress; // Define o valor da barra de acordo com o progresso recebido
