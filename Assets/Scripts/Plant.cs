@@ -4,17 +4,23 @@ using UnityEngine;
 
 public class Plant : MonoBehaviour, IWaterable
 {
-    private bool beingWatered = false;
+    //private bool beingWatered = false;
 
-    public void StartWatering()
+    private void Awake()
     {
-        beingWatered = true;
+        GameEvents.OnWateringStart.AddListener(StartWateringEventListener);
+        GameEvents.OnWateringStop.AddListener(StopWateringEventListener);
+    }
+
+    public void StartWateringEventListener()
+    {
+        //beingWatered = true;
         Debug.Log("A planta está sendo regada.");
     }
 
-    public void StopWatering()
+    public void StopWateringEventListener()
     {
-        beingWatered = false;
+        //beingWatered = false;
         Debug.Log("A planta não está mais sendo regada.");
     }
 }

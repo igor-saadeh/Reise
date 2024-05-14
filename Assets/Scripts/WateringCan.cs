@@ -15,21 +15,25 @@ public class WateringCan : MonoBehaviour
         startPosition = transform.position; 
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        IWaterable waterableObject = other.GetComponent<IWaterable>();
+        IWaterable waterableObject = collision.collider.GetComponent<IWaterable>();
         if (waterableObject != null)
         {
-            waterableObject.StartWatering();
+            //waterableObject.StartWatering();
+            Debug.Log("Colidindo");
+            GameEvents.OnWateringStart.Invoke();
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnCollisionExit2D(Collision2D collision)
     {
-        IWaterable waterableObject = other.GetComponent<IWaterable>();
+        IWaterable waterableObject = collision.collider.GetComponent<IWaterable>();
         if (waterableObject != null)
         {
-            waterableObject.StopWatering();
+            //waterableObject.StopWatering();
+            Debug.Log("Saiu da Colisao");
+            GameEvents.OnWateringStop.Invoke();
         }
     }
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 public interface IWaterable
 {
-    void StartWatering();
-    void StopWatering();
+    void StartWateringEventListener();
+    void StopWateringEventListener();
 }
 
