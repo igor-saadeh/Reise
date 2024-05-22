@@ -8,7 +8,7 @@ using UnityEngine.UIElements;
 // Criar forma de resetar a barra de progressos?
 public class ProgressBar : MonoBehaviour
 {
-    public static ProgressBar Instance { get; private set; }
+    public static ProgressBar Instance { get; private set; } // necessario?
     public UnityEngine.UI.Slider slider;
     private bool isWatering = false;
     private float currentWateringTime = 0f;
