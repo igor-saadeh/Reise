@@ -1,5 +1,7 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class EmojiManager : MonoBehaviour
@@ -14,15 +16,46 @@ public class EmojiManager : MonoBehaviour
     private void Awake()
     {
         LoadEmojis();
+        //FindEmojiButtons
+        SetupEmojiButtons();
     }
 
-    void Start()
+    //private void FindEmojiButtons()
+    //{
+    //    // Obtém todos os objetos raiz da cena ativa
+    //    GameObject[] rootObjects = SceneManager.GetActiveScene().GetRootGameObjects();
+
+    //    foreach (GameObject rootObject in rootObjects)
+    //    {
+    //        // Procura por Canvas entre os objetos raiz
+    //        if (rootObject.name == "Canvas")
+    //        {
+    //            // Se Canvas for encontrado, encontra todos os botões filhos dele
+    //            emojiButtons = rootObject.GetComponentsInChildren<Button>();
+    //            return; // Sai do loop, pois encontrou Canvas
+    //        }
+    //    }
+
+    //    // Se Canvas não for encontrado, exibe um erro
+    //    Debug.LogError("Canvas não encontrado na hierarquia.");
+    //}
+
+
+    private void SetupEmojiButtons()
     {
-        ShowEmojis();
+        for (int i = 0; i < emojiButtons.Length; i++)
+        {
+            int index = i; // Captura o valor de i para cada botão
+            emojiButtons[i].onClick.AddListener(() => OnEmojiButtonClicked(index)); // Desnecessário?
+        }
     }
 
-    // Exibe os emojis da etapa atual
-    void ShowEmojis()
+    private void LoadEmojis()
+    {
+        emojis = new List<Sprite>(Resources.LoadAll<Sprite>("Minigame4"));
+    }
+
+    private void ShowEmojis()
     {
         ClearEmojiButtons();
 
@@ -32,14 +65,9 @@ public class EmojiManager : MonoBehaviour
         }
     }
 
-    void LoadEmojis()
+    private void OnEmojiButtonClicked(int buttonIndex)
     {
-        emojis = new List<Sprite>(Resources.LoadAll<Sprite>("Minigame4"));
-    }
-
-    // Método chamado quando um emoji é clicado
-    void OnEmojiClicked(Sprite emoji)
-    {
+        Sprite emoji = emojis[startIndex + buttonIndex];
         selectedEmojis.Add(emoji);
 
         if (selectedEmojis.Count == 3)
@@ -49,8 +77,7 @@ public class EmojiManager : MonoBehaviour
         }
     }
 
-    // Avança para a próxima etapa ou finaliza o minigame
-    void NextStage()
+    private void NextStage()
     {
         currentStage++;
         startIndex = currentStage * emojisPerStage;
@@ -60,54 +87,14 @@ public class EmojiManager : MonoBehaviour
             ShowEmojis();
             selectedEmojis.Clear();
         }
-        //else
-        //{
-        //    EndGame();
-        //}
     }
 
-    // Limpa os botões de emojis
-    void ClearEmojiButtons()
+    private void ClearEmojiButtons()
     {
-        for (int i = 0; i < emojiButtons.Length; i++)
+        foreach (Button button in emojiButtons)
         {
-            emojiButtons[i].onClick.RemoveAllListeners();
-            emojiButtons[i].image.sprite = null;
+            button.image.sprite = null;
+            button.onClick.RemoveAllListeners(); // Limpa os listeners anteriores
         }
     }
-
-    // Finaliza o minigame (aqui você pode adicionar o que deve acontecer no final)
-    //void EndGame()
-    //{
-    //    Debug.Log("Fim do minigame!");
-    //    GameEvents.OnMiniGameComplete.Invoke(selectedEmojis);
-    //}
-
-    //void OnEnable()
-    //{
-    //    GameEvents.OnEmojiSelected.AddListener(OnEmojiSelectedHandler);
-    //    GameEvents.OnMiniGameComplete.AddListener(OnMiniGameCompleteHandler);
-    //}
-
-    //void OnDisable()
-    //{
-    //    GameEvents.OnEmojiSelected.RemoveListener(OnEmojiSelectedHandler);
-    //    GameEvents.OnMiniGameComplete.RemoveListener(OnMiniGameCompleteHandler);
-    //}
-
-    //void OnEmojiSelectedHandler(Sprite emoji)
-    //{
-    //    // Código a ser executado quando um emoji é selecionado
-    //    Debug.Log("Emoji selecionado: " + emoji.name);
-    //}
-
-    //void OnMiniGameCompleteHandler(List<Sprite> selectedEmojis)
-    //{
-    //    // Código a ser executado quando o minigame é concluído
-    //    Debug.Log("Minigame concluído com os seguintes emojis:");
-    //    foreach (var emoji in selectedEmojis)
-    //    {
-    //        Debug.Log(emoji.name);
-    //    }
-    //}
 }
