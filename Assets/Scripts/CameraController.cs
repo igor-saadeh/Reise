@@ -8,7 +8,7 @@ public class MoveCamera : MonoBehaviour
     private Camera mainCamera;
     //public Transform targetPosition; // O destino para onde você deseja mover a câmera
     private float moveTime = 0.6f; // O tempo que levará para a câmera se mover para o destino
-    Vector3 startPosition; // A posição inicial da câmera
+    Vector3 startPosition; // A posição inicial da câmera // 56, 0, -10
 
     private void Awake()
     {

@@ -1,79 +1,92 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class EmojiManager : MonoBehaviour
 {
-    [SerializeField] private List<Sprite> emojis; // Lista com os 9 sprites de emojis
-    [SerializeField] private Button[] emojiButtons;  // Array de Botões onde os emojis serão exibidos (UI)
+    private List<Sprite> emojis; // Lista com os 9 sprites de emojis
+    private Button[] emojiButtons;  // Array de Botões onde os emojis serão exibidos (UI)
+    private Balloon[] balloons; // Array de Balloons para exibir os emojis selecionados
+
     private List<Sprite> selectedEmojis = new List<Sprite>(); // Lista de seleções do jogador
     private int currentStage = 0; // Etapa atual
     private int emojisPerStage = 3; // Número de emojis por etapa
+    private int totalEmojis = 9; // Total de emojis no minigame
     private int startIndex = 0; // Índice inicial dos emojis da etapa
 
     private void Awake()
     {
         LoadEmojis();
-        //FindEmojiButtons
+        FindEmojiButtons();
+        FindBalloons();
         SetupEmojiButtons();
+        ShowEmojis();
     }
 
-    //private void FindEmojiButtons()
-    //{
-    //    // Obtém todos os objetos raiz da cena ativa
-    //    GameObject[] rootObjects = SceneManager.GetActiveScene().GetRootGameObjects();
+    private void FindEmojiButtons()
+    {
+        // Encontra todos os botões na cena ou no objeto que contém o script
+        emojiButtons = GetComponentsInChildren<Button>();
+    }
 
-    //    foreach (GameObject rootObject in rootObjects)
-    //    {
-    //        // Procura por Canvas entre os objetos raiz
-    //        if (rootObject.name == "Canvas")
-    //        {
-    //            // Se Canvas for encontrado, encontra todos os botões filhos dele
-    //            emojiButtons = rootObject.GetComponentsInChildren<Button>();
-    //            return; // Sai do loop, pois encontrou Canvas
-    //        }
-    //    }
-
-    //    // Se Canvas não for encontrado, exibe um erro
-    //    Debug.LogError("Canvas não encontrado na hierarquia.");
-    //}
-
+    private void FindBalloons()
+    {
+        // Encontra todos os Balloons na cena ou no objeto que contém o script
+        balloons = GetComponentsInChildren<Balloon>();
+    }
 
     private void SetupEmojiButtons()
     {
-        for (int i = 0; i < emojiButtons.Length; i++)
+        foreach (Button button in emojiButtons)
         {
-            int index = i; // Captura o valor de i para cada botão
-            emojiButtons[i].onClick.AddListener(() => OnEmojiButtonClicked(index)); // Desnecessário?
+            int index = System.Array.IndexOf(emojiButtons, button); // Captura o índice do botão
+            button.onClick.AddListener(() => OnEmojiButtonClicked(index));
         }
     }
 
     private void LoadEmojis()
     {
         emojis = new List<Sprite>(Resources.LoadAll<Sprite>("Minigame4"));
+        Debug.Log("Emojis carregados: " + emojis.Count);
     }
 
     private void ShowEmojis()
     {
         ClearEmojiButtons();
 
-        for (int i = 0; i < emojisPerStage; i++)
+        // Calcula o índice final para esta etapa
+        int endIndex = Mathf.Min(startIndex + emojisPerStage, totalEmojis);
+
+        for (int i = startIndex; i < endIndex; i++)
         {
-            emojiButtons[i].image.sprite = emojis[startIndex + i];
+            emojiButtons[i - startIndex].image.sprite = emojis[i];
+            emojiButtons[i - startIndex].interactable = true;
         }
     }
 
     private void OnEmojiButtonClicked(int buttonIndex)
     {
-        Sprite emoji = emojis[startIndex + buttonIndex];
-        selectedEmojis.Add(emoji);
+        int emojiIndex = startIndex + buttonIndex;
 
-        if (selectedEmojis.Count == 3)
+        if (emojiIndex < emojis.Count)
         {
-            GameEvents.OnMiniGameStepCompleted.Invoke();
-            NextStage();
+            Sprite emoji = emojis[emojiIndex];
+            selectedEmojis.Add(emoji);
+
+            Debug.Log("Emoji selecionado: " + emoji.name);
+            Debug.Log("Total de emojis selecionados: " + selectedEmojis.Count);
+
+            if (selectedEmojis.Count % emojisPerStage == 0)
+            {
+                int balloonIndex = selectedEmojis.Count / emojisPerStage - 1;
+                balloons[balloonIndex].AddEmoji(emoji); // Adiciona o emoji ao Balloon correspondente
+                GameEvents.OnMiniGameStepCompleted.Invoke();
+                NextStage();
+            }
+        }
+        else
+        {
+            Debug.LogError("Índice de emoji fora dos limites: " + emojiIndex);
         }
     }
 
@@ -82,11 +95,27 @@ public class EmojiManager : MonoBehaviour
         currentStage++;
         startIndex = currentStage * emojisPerStage;
 
-        if (currentStage < 3)
+        if (currentStage < balloons.Length)
         {
             ShowEmojis();
-            selectedEmojis.Clear();
         }
+        else
+        {
+            EndMiniGame();
+        }
+
+        Debug.Log("Etapa atual: " + currentStage);
+    }
+
+    private void EndMiniGame()
+    {
+        foreach (Button button in emojiButtons)
+        {
+            button.interactable = false;
+        }
+
+        Debug.Log("Minigame finalizado.");
+        // Adicione aqui qualquer lógica adicional para o fim do minigame
     }
 
     private void ClearEmojiButtons()
@@ -96,5 +125,7 @@ public class EmojiManager : MonoBehaviour
             button.image.sprite = null;
             button.onClick.RemoveAllListeners(); // Limpa os listeners anteriores
         }
+
+        SetupEmojiButtons(); // Reconfigura os listeners
     }
 }
