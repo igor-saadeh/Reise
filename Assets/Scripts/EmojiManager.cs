@@ -4,14 +4,15 @@ using UnityEngine.UI;
 
 public class EmojiManager : MonoBehaviour
 {
-    private List<Sprite> emojis; // Lista com os 9 sprites de emojis
+    private List<Sprite> emojis; // Lista com os sprites de emojis
     private Button[] emojiButtons;  // Array de Botões onde os emojis serão exibidos (UI)
     private Balloon[] balloons; // Array de Balloons para exibir os emojis selecionados
 
-    private List<Sprite> selectedEmojis = new List<Sprite>(); // Lista de seleções do jogador
+    private List<Sprite> selectedEmojis = new List<Sprite>(); // Lista de emojis selecionados pelo jogador
     private int currentStage = 0; // Etapa atual
     private int emojisPerStage = 3; // Número de emojis por etapa
-    private int totalEmojis = 9; // Total de emojis no minigame
+    //private int totalEmojis = 9; // Total de emojis no minigame
+    private int emojisSelectedInCurrentStage = 0; // Quantidade de emojis selecionados na etapa atual
     private int startIndex = 0; // Índice inicial dos emojis da etapa
 
     private void Awake()
@@ -39,8 +40,7 @@ public class EmojiManager : MonoBehaviour
     {
         foreach (Button button in emojiButtons)
         {
-            int index = System.Array.IndexOf(emojiButtons, button); // Captura o índice do botão
-            button.onClick.AddListener(() => OnEmojiButtonClicked(index));
+            button.onClick.AddListener(() => OnEmojiButtonClicked(button));
         }
     }
 
@@ -54,39 +54,40 @@ public class EmojiManager : MonoBehaviour
     {
         ClearEmojiButtons();
 
-        // Calcula o índice final para esta etapa
-        int endIndex = Mathf.Min(startIndex + emojisPerStage, totalEmojis);
-
-        for (int i = startIndex; i < endIndex; i++)
+        for (int i = 0; i < emojiButtons.Length; i++)
         {
-            emojiButtons[i - startIndex].image.sprite = emojis[i];
-            emojiButtons[i - startIndex].interactable = true;
+            if (startIndex + i < emojis.Count)
+            {
+                emojiButtons[i].image.sprite = emojis[startIndex + i];
+                emojiButtons[i].interactable = true;
+            }
         }
     }
 
-    private void OnEmojiButtonClicked(int buttonIndex)
+    private void OnEmojiButtonClicked(Button button)
     {
+        int buttonIndex = System.Array.IndexOf(emojiButtons, button);
         int emojiIndex = startIndex + buttonIndex;
 
-        if (emojiIndex < emojis.Count)
+        if (emojiIndex < emojis.Count && emojisSelectedInCurrentStage < emojisPerStage)
         {
             Sprite emoji = emojis[emojiIndex];
             selectedEmojis.Add(emoji);
+            emojisSelectedInCurrentStage++;
 
             Debug.Log("Emoji selecionado: " + emoji.name);
             Debug.Log("Total de emojis selecionados: " + selectedEmojis.Count);
 
-            if (selectedEmojis.Count % emojisPerStage == 0)
+            if (emojisSelectedInCurrentStage == emojisPerStage)
             {
-                int balloonIndex = selectedEmojis.Count / emojisPerStage - 1;
-                balloons[balloonIndex].AddEmoji(emoji); // Adiciona o emoji ao Balloon correspondente
+                balloons[currentStage].AddEmoji(selectedEmojis.ToArray()); // Adiciona os emojis ao Balloon correspondente
                 GameEvents.OnMiniGameStepCompleted.Invoke();
                 NextStage();
             }
         }
         else
         {
-            Debug.LogError("Índice de emoji fora dos limites: " + emojiIndex);
+            Debug.LogError("Índice de emoji fora dos limites ou etapa completa: " + emojiIndex);
         }
     }
 
@@ -94,6 +95,8 @@ public class EmojiManager : MonoBehaviour
     {
         currentStage++;
         startIndex = currentStage * emojisPerStage;
+        emojisSelectedInCurrentStage = 0;
+        selectedEmojis.Clear();
 
         if (currentStage < balloons.Length)
         {
