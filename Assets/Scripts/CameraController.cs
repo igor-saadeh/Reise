@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 public class MoveCamera : MonoBehaviour
 {
     private Camera mainCamera;
-    //public Transform targetPosition; // O destino para onde você deseja mover a câmera
     private float moveTime = 0.6f; // O tempo que levará para a câmera se mover para o destino
-    Vector3 startPosition; // A posição inicial da câmera // 56, 0, -10
+    private Vector3 startPosition; // A posição inicial da câmera
+    private bool isMoving = false; // Verifica se a câmera está em movimento
 
     private void Awake()
     {
@@ -34,28 +34,33 @@ public class MoveCamera : MonoBehaviour
 
     private void Start()
     {
-        startPosition = mainCamera.transform.position;  //0,0,0
+        startPosition = mainCamera.transform.position;
     }
 
     public void MoveCameraToTarget()
     {
-        Vector3 newPosition = new Vector3(startPosition.x + 1200f, startPosition.y, startPosition.z);
-
-        StartCoroutine(MoveToPosition(newPosition, moveTime));
+        if (!isMoving)
+        {
+            Vector3 newPosition = mainCamera.transform.position + new Vector3(1200f, 0, 0);
+            StartCoroutine(MoveToPosition(newPosition, moveTime));
+        }
     }
 
     IEnumerator MoveToPosition(Vector3 targetPosition, float timeToMove)
     {
+        isMoving = true;
         float elapsedTime = 0;
-        //Vector3 startingPos = transform.position;
+        Vector3 startingPos = mainCamera.transform.position;
 
         while (elapsedTime < timeToMove)
         {
-            mainCamera.transform.position = Vector3.Lerp(startPosition, targetPosition, (elapsedTime / timeToMove));
+            mainCamera.transform.position = Vector3.Lerp(startingPos, targetPosition, (elapsedTime / timeToMove));
             elapsedTime += Time.deltaTime;
             yield return null;
         }
 
         mainCamera.transform.position = targetPosition;
+        startPosition = targetPosition; // Atualiza a posição inicial para a nova posição
+        isMoving = false;
     }
 }
