@@ -40,6 +40,7 @@ public class ProgressBar : MonoBehaviour
             {
                 StopUpdatingProgressBar();
                 HideProgressBar();
+                GameEvents.OnMinigame2Finished.Invoke();    
                 // ativar botao para proximo quadro // EventSystem
             }
         }

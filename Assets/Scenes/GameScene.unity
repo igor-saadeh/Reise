@@ -688,12 +688,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6381104496809373637, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6381104496809373637, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1518758556}
+    - target: {fileID: 6959986641122488914, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8075806086779617847, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_text
       value: "Mesmo sem espa\xE7o, fartura\nou conforto, a casa se encheu\nde vida...
@@ -785,7 +789,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8360786963620127893, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 671989200}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4347028434084575754, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1256688635}
   m_SourcePrefab: {fileID: 100100000, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
 --- !u!224 &417718979 stripped
 RectTransform:
@@ -1591,9 +1598,17 @@ PrefabInstance:
       value: Quadro_9
       objectReference: {fileID: 0}
     - target: {fileID: 6381104496809373637, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6381104496809373637, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1518758556}
+    - target: {fileID: 6959986641122488914, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8075806086779617847, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_text
       value: "Cada um fez o que podia,\npara que pud\xE9ssemos ser felizes."
@@ -1684,7 +1699,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8360786963620127893, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1633246566}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4347028434084575754, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1152227183}
   m_SourcePrefab: {fileID: 100100000, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
 --- !u!224 &731143204 stripped
 RectTransform:
@@ -1834,6 +1852,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 912384759}
   m_CullTransparentMesh: 1
+--- !u!1 &1152227180 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4347028434084575754, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+  m_PrefabInstance: {fileID: 731143203}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1152227183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152227180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b7415266eb08cc4782c0eaaeba13d7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1177183423
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2172,6 +2207,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1249045443}
   m_CullTransparentMesh: 1
+--- !u!1 &1256688632 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4347028434084575754, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+  m_PrefabInstance: {fileID: 417718978}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1256688635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256688632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b7415266eb08cc4782c0eaaeba13d7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1271216927
 GameObject:
   m_ObjectHideFlags: 0

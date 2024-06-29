@@ -116,9 +116,11 @@ public class EmojiManager : MonoBehaviour
         {
             button.interactable = false;
         }
+        // evento para ativar o botão para avançar
+        GameEvents.OnMinigame3Finished.Invoke();    
 
         Debug.Log("Minigame finalizado.");
-        // Adicione aqui qualquer lógica adicional para o fim do minigame
+        
     }
 
     private void ClearEmojiButtons()
