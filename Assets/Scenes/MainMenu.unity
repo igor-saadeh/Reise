@@ -891,7 +891,7 @@ GameObject:
   - component: {fileID: 350720335}
   - component: {fileID: 350720334}
   m_Layer: 5
-  m_Name: Victor (2)
+  m_Name: SourceName
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1620,7 +1620,7 @@ GameObject:
   - component: {fileID: 696448046}
   - component: {fileID: 696448045}
   m_Layer: 5
-  m_Name: Victor (2)
+  m_Name: TeachersName
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1826,7 +1826,7 @@ GameObject:
   - component: {fileID: 710918968}
   - component: {fileID: 710918967}
   m_Layer: 5
-  m_Name: Victor
+  m_Name: ArtistName
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2304,7 +2304,7 @@ GameObject:
   - component: {fileID: 849762749}
   - component: {fileID: 849762748}
   m_Layer: 5
-  m_Name: Victor (1)
+  m_Name: SourceName
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4093,7 +4093,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1898212525
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4318,7 +4318,7 @@ GameObject:
   - component: {fileID: 2027993844}
   - component: {fileID: 2027993843}
   m_Layer: 5
-  m_Name: Victor
+  m_Name: ProgrammersNames
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
