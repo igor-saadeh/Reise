@@ -41,12 +41,14 @@ public class WateringCan : MonoBehaviour
     {
         isDragging = true;
         offset = transform.position - GetMouseWorldPosition();
+        transform.Rotate(0, 0, 45);
     }
 
     void OnMouseUp()
     {
         isDragging = false;
         transform.position = startPosition;
+        transform.Rotate(0, 0, -45);
     }
 
     void Update()
@@ -54,8 +56,9 @@ public class WateringCan : MonoBehaviour
         if (isDragging)
         {
             Vector3 newPosition = GetMouseWorldPosition() + offset;
-            transform.position = newPosition;
+            transform.position = newPosition;           
         }
+
     }
 
     private Vector3 GetMouseWorldPosition()
