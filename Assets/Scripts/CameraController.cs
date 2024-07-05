@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MoveCamera : MonoBehaviour
 {
-    private Camera mainCamera;
-    private float moveTime = 0.6f; // O tempo que levará para a câmera se mover para o destino
+    private Camera mainCamera; // camera size = 1075 ou 1110
+    private float moveTime = 0.8f; // O tempo que levará para a câmera se mover para o destino
     private Vector3 startPosition; // A posição inicial da câmera
     private bool isMoving = false; // Verifica se a câmera está em movimento
 
