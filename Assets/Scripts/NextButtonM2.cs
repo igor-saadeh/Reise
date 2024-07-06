@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NextButton : MonoBehaviour
+public class NextButtonM2 : MonoBehaviour
 {
     private UnityEngine.UI.Button nextButton;
 
@@ -21,7 +21,10 @@ public class NextButton : MonoBehaviour
 
     private void EnableButton()
     {
-        nextButton.enabled = true;
+        if (nextButton.enabled == false)
+        {
+            nextButton.enabled = true;
+        }
     }
 
 }
