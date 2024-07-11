@@ -21,10 +21,12 @@ public class NextButtonM4 : MonoBehaviour
 
     private void EnableButton()
     {
-        if (nextButton.enabled == false)
-        {
-            nextButton.enabled = true;
-        }
+        //if (nextButton.enabled == false)
+        //{
+        //    nextButton.enabled = true;
+        //}
+
+        nextButton.gameObject.GetComponent<UnityEngine.UI.Image>().enabled = true;
     }
 
 }
