@@ -136,10 +136,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1518758555}
     m_Modifications:
+    - target: {fileID: 274426859909296021, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 4.4053
+      objectReference: {fileID: 0}
+    - target: {fileID: 274426859909296021, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 123.0072
+      objectReference: {fileID: 0}
+    - target: {fileID: 274426859909296021, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -69.71106
+      objectReference: {fileID: 0}
     - target: {fileID: 358441320798016445, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: aaf1c0c221825bf42848a26a50974013, type: 3}
+    - target: {fileID: 3901295624108991473, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 4.4053
+      objectReference: {fileID: 0}
+    - target: {fileID: 3901295624108991473, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 123.0072
+      objectReference: {fileID: 0}
+    - target: {fileID: 3901295624108991473, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -69.71106
+      objectReference: {fileID: 0}
     - target: {fileID: 4347028434084575754, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_Name
       value: Quadro_5
@@ -166,7 +190,8 @@ PrefabInstance:
       objectReference: {fileID: 1518758556}
     - target: {fileID: 8075806086779617847, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_text
-      value: "Acreditamos que tudo ficaria bem\nassim que tiv\xE9ssemos um lar"
+      value: "Acreditamos que tudo ficaria bem\nassim que tiv\xE9ssemos um lar, ent\xE3o
+        nos alojamos em uma regi\xE3o que hoje \xE9 conhecida\ncomo S\xE3o Leopoldo."
       objectReference: {fileID: 0}
     - target: {fileID: 8360786963620127893, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_Pivot.x
@@ -3438,7 +3463,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "No fim, o importante era estarmos juntos, n\xE3o importa onde.\r\n"
+  m_text: "A solidariedade entre os imigrantes alem\xE3es est\xE1 refletida nas muitas
+    hist\xF3rias e artefatos preservados no Museu Hist\xF3rico Visconde\nde S\xE3o
+    Leopoldo.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4768,10 +4795,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1518758555}
     m_Modifications:
+    - target: {fileID: 274426859909296021, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 4.4053
+      objectReference: {fileID: 0}
+    - target: {fileID: 274426859909296021, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -3.481
+      objectReference: {fileID: 0}
+    - target: {fileID: 274426859909296021, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -6.4669
+      objectReference: {fileID: 0}
     - target: {fileID: 358441320798016445, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: cf2905de1cc36b14fafb32ad905daff8, type: 3}
+    - target: {fileID: 3901295624108991473, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 4.4053
+      objectReference: {fileID: 0}
+    - target: {fileID: 3901295624108991473, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -3.481
+      objectReference: {fileID: 0}
+    - target: {fileID: 3901295624108991473, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -6.4669
+      objectReference: {fileID: 0}
     - target: {fileID: 4347028434084575754, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_Name
       value: Quadro_3
@@ -4899,8 +4950,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 1518758555}
     m_Modifications:
     - target: {fileID: 274426859909296021, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 4.4053
+      objectReference: {fileID: 0}
+    - target: {fileID: 274426859909296021, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 137.4732
+      objectReference: {fileID: 0}
+    - target: {fileID: 274426859909296021, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 10.595215
+      objectReference: {fileID: 0}
+    - target: {fileID: 274426859909296021, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -76.94263
       objectReference: {fileID: 0}
     - target: {fileID: 358441320798016445, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_Sprite
@@ -4919,8 +4982,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3901295624108991473, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 4.4053
+      objectReference: {fileID: 0}
+    - target: {fileID: 3901295624108991473, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 137.4692
+      objectReference: {fileID: 0}
+    - target: {fileID: 3901295624108991473, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 10.595215
+      objectReference: {fileID: 0}
+    - target: {fileID: 3901295624108991473, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -76.94214
       objectReference: {fileID: 0}
     - target: {fileID: 4347028434084575754, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_Name
@@ -4964,7 +5039,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8075806086779617847, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_text
-      value: "No fim, o importante era estarmos juntos, n\xE3o importa onde.\r\n"
+      value: "Gra\xE7as \xE0 solidariedade prestada por Robin e Frieda Schmidt, tantas
+        outras fam\xEDlias constru\xEDram um lar e ajudaram a fundar a hist\xF3ria\nde
+        S\xE3o Leopoldo."
       objectReference: {fileID: 0}
     - target: {fileID: 8224941821102511883, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -6354,8 +6431,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.07550005, y: 0.7927516}
   m_AnchorMax: {x: 0.90673506, y: 0.9311617}
-  m_AnchoredPosition: {x: 10.595215, y: -1414}
-  m_SizeDelta: {x: 4.405315, y: 0.7351332}
+  m_AnchoredPosition: {x: 10.595215, y: -1339.291}
+  m_SizeDelta: {x: 4.4053, y: 150.1533}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1700936427
 MonoBehaviour:
@@ -6716,8 +6793,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.07550005, y: 0.7927516}
   m_AnchorMax: {x: 0.90673506, y: 0.9311617}
-  m_AnchoredPosition: {x: 10.595215, y: -1414}
-  m_SizeDelta: {x: 4.405315, y: 0.7351332}
+  m_AnchoredPosition: {x: 10.595215, y: -1339.291}
+  m_SizeDelta: {x: 4.4053, y: 150.1533}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1811802396
 MonoBehaviour:
