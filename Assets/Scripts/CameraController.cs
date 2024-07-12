@@ -41,6 +41,7 @@ public class MoveCamera : MonoBehaviour
     {
         if (!isMoving)
         {
+            //sfx
             Vector3 newPosition = mainCamera.transform.position + new Vector3(1200f, 0, 0);
             StartCoroutine(MoveToPosition(newPosition, moveTime));
         }
