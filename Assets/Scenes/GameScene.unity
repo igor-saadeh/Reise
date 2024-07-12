@@ -188,10 +188,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1518758556}
+    - target: {fileID: 7220178070051036395, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2077
+      objectReference: {fileID: 0}
     - target: {fileID: 8075806086779617847, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_text
       value: "Acreditamos que tudo ficaria bem\nassim que tiv\xE9ssemos um lar, ent\xE3o
         nos alojamos em uma regi\xE3o que hoje \xE9 conhecida\ncomo S\xE3o Leopoldo."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224941821102511883, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 182.4425
       objectReference: {fileID: 0}
     - target: {fileID: 8360786963620127893, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_Pivot.x
@@ -693,6 +701,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1518758555}
     m_Modifications:
+    - target: {fileID: 274426859909296021, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -8.575012
+      objectReference: {fileID: 0}
     - target: {fileID: 323559927453790756, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -749,9 +761,17 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1518758556}
+    - target: {fileID: 7220178070051036395, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2077
+      objectReference: {fileID: 0}
     - target: {fileID: 8075806086779617847, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_text
       value: "mas a realidade foi de cortar\no cora\xE7\xE3o."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224941821102511883, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 182.4425
       objectReference: {fileID: 0}
     - target: {fileID: 8360786963620127893, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_Pivot.x
@@ -1474,6 +1494,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1518758555}
     m_Modifications:
+    - target: {fileID: 274426859909296021, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -8.575012
+      objectReference: {fileID: 0}
     - target: {fileID: 358441320798016445, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1518,10 +1542,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7220178070051036395, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2077
+      objectReference: {fileID: 0}
     - target: {fileID: 8075806086779617847, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_text
       value: "Mesmo sem espa\xE7o, fartura\nou conforto, a casa se encheu\nde vida...
         risadas... conversas..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224941821102511883, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 182.4425
       objectReference: {fileID: 0}
     - target: {fileID: 8360786963620127893, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_Pivot.x
@@ -2048,6 +2080,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1518758555}
     m_Modifications:
+    - target: {fileID: 274426859909296021, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -8.575012
+      objectReference: {fileID: 0}
     - target: {fileID: 358441320798016445, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2076,10 +2112,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1518758556}
+    - target: {fileID: 7220178070051036395, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2077
+      objectReference: {fileID: 0}
     - target: {fileID: 8075806086779617847, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_text
       value: "Mas n\xE3o era hora de desistir.\nFui fazer o que sabia\npara garantir
         nosso sustento."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224941821102511883, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 182.4425
       objectReference: {fileID: 0}
     - target: {fileID: 8360786963620127893, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_Pivot.x
@@ -2179,6 +2223,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1518758555}
     m_Modifications:
+    - target: {fileID: 274426859909296021, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -8.575012
+      objectReference: {fileID: 0}
     - target: {fileID: 358441320798016445, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2207,9 +2255,17 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1518758556}
+    - target: {fileID: 7220178070051036395, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2077
+      objectReference: {fileID: 0}
     - target: {fileID: 8075806086779617847, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_text
       value: "Tivemos esperan\xE7a, ousamos,\nconstru\xEDmos o nosso caminho."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224941821102511883, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 182.4425
       objectReference: {fileID: 0}
     - target: {fileID: 8360786963620127893, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_Pivot.x
@@ -2309,6 +2365,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1518758555}
     m_Modifications:
+    - target: {fileID: 274426859909296021, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -8.575012
+      objectReference: {fileID: 0}
     - target: {fileID: 358441320798016445, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2345,6 +2405,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1518758556}
+    - target: {fileID: 7220178070051036395, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2077
+      objectReference: {fileID: 0}
     - target: {fileID: 8075806086779617847, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_text
       value: "No fim, o importante era estarmos juntos, n\xE3o importa onde.\r\n"
@@ -2352,6 +2416,10 @@ PrefabInstance:
     - target: {fileID: 8224941821102511883, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -199
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224941821102511883, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 182.4425
       objectReference: {fileID: 0}
     - target: {fileID: 8360786963620127893, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_Pivot.x
@@ -2549,6 +2617,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1518758555}
     m_Modifications:
+    - target: {fileID: 274426859909296021, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -8.575012
+      objectReference: {fileID: 0}
     - target: {fileID: 358441320798016445, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2577,10 +2649,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1518758556}
+    - target: {fileID: 7220178070051036395, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2077
+      objectReference: {fileID: 0}
     - target: {fileID: 8075806086779617847, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_text
       value: "Ficamos sem rea\xE7\xE3o, encarando\num lar sem conforto\ne com pouco
         espa\xE7o"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224941821102511883, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 182.4425
       objectReference: {fileID: 0}
     - target: {fileID: 8360786963620127893, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_Pivot.x
@@ -3159,6 +3239,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1518758555}
     m_Modifications:
+    - target: {fileID: 274426859909296021, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -8.575012
+      objectReference: {fileID: 0}
     - target: {fileID: 358441320798016445, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -3207,9 +3291,17 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7220178070051036395, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2077
+      objectReference: {fileID: 0}
     - target: {fileID: 8075806086779617847, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_text
       value: "Cada um fez o que podia,\npara que pud\xE9ssemos ser felizes."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224941821102511883, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 182.4425
       objectReference: {fileID: 0}
     - target: {fileID: 8360786963620127893, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_Pivot.x
@@ -4874,6 +4966,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1518758555}
     m_Modifications:
+    - target: {fileID: 274426859909296021, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -8.575012
+      objectReference: {fileID: 0}
     - target: {fileID: 358441320798016445, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -4918,9 +5014,17 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1518758556}
+    - target: {fileID: 7220178070051036395, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2077
+      objectReference: {fileID: 0}
     - target: {fileID: 8075806086779617847, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_text
       value: "Ainda assim, a decis\xE3o de ter\nvindo pesada nos ombros."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224941821102511883, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 182.4425
       objectReference: {fileID: 0}
     - target: {fileID: 8360786963620127893, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_Pivot.x
@@ -5712,7 +5816,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 274426859909296021, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -6.4669
+      value: -6.466919
       objectReference: {fileID: 0}
     - target: {fileID: 358441320798016445, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_Sprite
@@ -5728,7 +5832,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3901295624108991473, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -6.4669
+      value: -6.466919
       objectReference: {fileID: 0}
     - target: {fileID: 4347028434084575754, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_Name
@@ -5754,9 +5858,17 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1518758556}
+    - target: {fileID: 7220178070051036395, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2077
+      objectReference: {fileID: 0}
     - target: {fileID: 8075806086779617847, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_text
       value: "Pensamos que ter\xEDamos uma vida melhor."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224941821102511883, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 182.4425
       objectReference: {fileID: 0}
     - target: {fileID: 8360786963620127893, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_Pivot.x
@@ -5947,6 +6059,10 @@ PrefabInstance:
     - target: {fileID: 7220178070051036395, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -106.62598
+      objectReference: {fileID: 0}
+    - target: {fileID: 7220178070051036395, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2077
       objectReference: {fileID: 0}
     - target: {fileID: 8075806086779617847, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_text
@@ -6345,7 +6461,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 1135
+  orthographic size: 1180
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -6685,7 +6801,7 @@ AudioSource:
   m_GameObject: {fileID: 1518758551}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 2e26adb5fdfdfc14c95d46dadf06034d, type: 2}
   m_audioClip: {fileID: 8300000, guid: d6fc0212c43d40847abc5862122f6acd, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -6785,6 +6901,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1518758555}
     m_Modifications:
+    - target: {fileID: 274426859909296021, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -8.575012
+      objectReference: {fileID: 0}
     - target: {fileID: 358441320798016445, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -6813,10 +6933,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1518758556}
+    - target: {fileID: 7220178070051036395, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2077
+      objectReference: {fileID: 0}
     - target: {fileID: 8075806086779617847, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_text
       value: "Outros imigrantes precisavam\nde ajuda. Conhec\xEDamos bem\nessas dores
         e os acolhemos."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224941821102511883, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 182.4425
       objectReference: {fileID: 0}
     - target: {fileID: 8360786963620127893, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_Pivot.x
@@ -7004,6 +7132,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1518758555}
     m_Modifications:
+    - target: {fileID: 274426859909296021, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -8.575012
+      objectReference: {fileID: 0}
     - target: {fileID: 358441320798016445, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -7032,9 +7164,17 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1518758556}
+    - target: {fileID: 7220178070051036395, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2077
+      objectReference: {fileID: 0}
     - target: {fileID: 8075806086779617847, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_text
       value: "e abra\xE7ar um futuro incerto."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224941821102511883, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 182.4425
       objectReference: {fileID: 0}
     - target: {fileID: 8360786963620127893, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_Pivot.x
@@ -7442,7 +7582,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.07550005, y: 0.7927516}
   m_AnchorMax: {x: 0.90673506, y: 0.9311617}
-  m_AnchoredPosition: {x: 10.595215, y: -1590}
+  m_AnchoredPosition: {x: 10.595215, y: -1590.0002}
   m_SizeDelta: {x: 4.4053, y: 150.1533}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1700936427
@@ -7804,7 +7944,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.07550005, y: 0.7927516}
   m_AnchorMax: {x: 0.90673506, y: 0.9311617}
-  m_AnchoredPosition: {x: 10.595215, y: -1590}
+  m_AnchoredPosition: {x: 10.595215, y: -1590.0002}
   m_SizeDelta: {x: 4.4053, y: 150.1533}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1811802396
@@ -8953,6 +9093,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1518758555}
     m_Modifications:
+    - target: {fileID: 274426859909296021, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -8.575012
+      objectReference: {fileID: 0}
     - target: {fileID: 4347028434084575754, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_Name
       value: Quadro_1
@@ -8969,6 +9113,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1518758556}
+    - target: {fileID: 7220178070051036395, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2077
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224941821102511883, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 182.4425
+      objectReference: {fileID: 0}
     - target: {fileID: 8360786963620127893, guid: 45073929a5ab24f45aacf7d3628a02de, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
