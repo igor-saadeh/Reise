@@ -58,7 +58,6 @@ public class WateringCan : MonoBehaviour
             Vector3 newPosition = GetMouseWorldPosition() + offset;
             transform.position = newPosition;           
         }
-
     }
 
     private Vector3 GetMouseWorldPosition()
