@@ -37,7 +37,7 @@ public class HeartPeca : MonoBehaviour
         isDragging = false;
 
         Debug.Log((Vector2.zero - trans.anchoredPosition).magnitude);
-        if(!locked && (Vector2.zero - trans.anchoredPosition).magnitude < 32.5f)
+        if(!locked && (Vector2.zero - trans.anchoredPosition).magnitude < 40f)
         {
             locked = true;
             trans.anchoredPosition = Vector2.zero;
